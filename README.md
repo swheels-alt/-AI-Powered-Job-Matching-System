@@ -1,303 +1,90 @@
 # AI-Powered Job Matching System
 
-An intelligent system that matches job seekers with relevant job postings using AI and machine learning techniques.
-
-## Project Overview
-
-This system implements a comprehensive job matching pipeline that:
-1. **Acquires** job posting data from multiple sources
-2. **Preprocesses** and cleans the data for optimal embedding generation
-3. **Generates** embeddings for semantic similarity matching
-4. **Matches** job seekers with relevant opportunities
-5. **Recommends** personalized job suggestions
-
-## Project Status
-
-- ✅ **Stage 1: Data Acquisition** - Complete
-- ✅ **Stage 2: Data Preprocessing** - Complete
-- 🔄 **Stage 3: Embedding Generation** - Pending
-- ⏳ **Stage 4: Matching Algorithm** - Pending
-- ⏳ **Stage 5: Recommendation System** - Pending
-
-## Stage 1: Data Acquisition ✅
-
-### Overview
-Comprehensive data acquisition system that ethically scrapes job postings from multiple sources including Indeed and LinkedIn.
-
-### Features
-- **Multi-source scraping**: Indeed and LinkedIn integration
-- **Ethical scraping**: Rate limiting, user agents, and respectful crawling
-- **Robust error handling**: Comprehensive error recovery and logging
-- **Data validation**: Quality checks and duplicate removal
-- **Flexible output**: JSON and CSV formats
-- **Production ready**: Configurable settings and monitoring
-
-### Key Components
-- `src/scrapers/` - Scraping modules for different job sites
-- `src/utils/` - Data processing and error handling utilities
-- `src/config/` - Configuration management
-- `data/raw/` - Raw scraped data storage
-
-### Usage
-```bash
-# Run the scraper
-python demo_scraper.py
-
-# Test the system
-python test_scraper.py
-```
-
-## Stage 2: Data Preprocessing ✅
-
-### Overview
-Comprehensive preprocessing pipeline that cleans and prepares job data and resume text for embedding generation.
-
-### Features
-- **Text Cleaning**: HTML removal, special character handling, whitespace normalization
-- **Data Normalization**: Location, job title, and experience level standardization
-- **Skill Extraction**: Automated skill identification from job descriptions
-- **Resume Parsing**: Section extraction and contact information parsing
-- **Missing Data Handling**: Multiple strategies for incomplete data
-- **Embedding Preparation**: Text preparation optimized for embedding models
-- **Quality Validation**: Data quality checks and reporting
-
-### Key Components
-
-#### Text Cleaning (`src/preprocessing/text_cleaner.py`)
-- HTML tag removal and entity decoding
-- Special character handling with punctuation preservation
-- Location normalization (e.g., "St. Louis, MO" → "Saint Louis, MISSOURI")
-- Job title normalization (e.g., "Sr. Software Eng." → "Senior Software Engineer")
-- Skill extraction using keyword matching
-- Stop word removal and lemmatization
-- Embedding-optimized text preparation
-
-#### Data Preprocessing (`src/preprocessing/data_preprocessor.py`)
-- Comprehensive job data preprocessing pipeline
-- Missing data handling strategies (fill_na, remove, interpolate)
-- Experience level categorization (junior, mid-level, senior)
-- Salary range normalization
-- Data validation and quality checks
-- Preprocessing statistics and reporting
-
-#### Resume Parsing (`src/preprocessing/resume_parser.py`)
-- Section-based resume parsing (experience, education, skills, projects)
-- Contact information extraction (email, phone, LinkedIn, GitHub)
-- Skill extraction from all resume sections
-- Experience and education detail parsing
-- Resume summary generation
-
-#### Embedding Preparation (`src/preprocessing/embedding_preparer.py`)
-- Coordinated preprocessing for embedding generation
-- Batch processing of jobs and resume data
-- Embedding text creation optimized for similarity matching
-- Data validation and quality assurance
-- Comprehensive reporting and statistics
-
-### Preprocessing Pipeline
-
-1. **Text Cleaning**
-   - Remove HTML tags and decode entities
-   - Normalize whitespace and special characters
-   - Convert to lowercase for consistency
-
-2. **Data Normalization**
-   - Standardize location formats
-   - Normalize job titles and abbreviations
-   - Categorize experience levels
-
-3. **Skill Extraction**
-   - Extract skills from job descriptions
-   - Parse comma-separated skill lists
-   - Remove duplicates and normalize
-
-4. **Missing Data Handling**
-   - Fill missing fields with "N/A"
-   - Remove incomplete entries (optional)
-   - Interpolate based on similar jobs (optional)
-
-5. **Embedding Preparation**
-   - Create optimized text for embedding models
-   - Combine relevant fields (title, company, description, skills)
-   - Apply optional preprocessing (stop words, lemmatization)
-
-### Usage
-
-#### Basic Preprocessing
-```python
-from src.preprocessing.embedding_preparer import EmbeddingPreparer
-
-# Initialize preparer
-preparer = EmbeddingPreparer()
-
-# Prepare jobs for embedding
-prepared_jobs = preparer.prepare_jobs_for_embedding(jobs_data)
-
-# Prepare resume for embedding
-prepared_resume = preparer.prepare_resume_for_embedding(resume_text)
-```
-
-#### Complete Pipeline
-```python
-# Create embedding batch with both jobs and resume
-embedding_batch = preparer.create_embedding_batch(
-    jobs_data, 
-    resume_text,
-    preprocessing_config={
-        'jobs': {
-            'remove_stop_words': False,
-            'lemmatize': False,
-            'extract_skills': True,
-            'missing_data_strategy': 'fill_na'
-        },
-        'resume': {
-            'remove_stop_words': False,
-            'lemmatize': False,
-            'include_sections': ['summary', 'experience', 'skills', 'education', 'projects']
-        }
-    }
-)
-
-# Save the batch
-filepath = preparer.save_embedding_batch(embedding_batch)
-```
-
-#### Demonstration
-```bash
-# Run the complete preprocessing demonstration
-python preprocess_data.py
-```
-
-### Output Files
-- `data/processed/embedding_batch_*.json` - Complete embedding-ready data
-- `data/processed/preprocessed_jobs_*.json` - Preprocessed job data
-
-### Preprocessing Statistics
-The system provides comprehensive statistics including:
-- Original vs preprocessed job counts
-- Skills extraction metrics
-- Experience level distribution
-- Location distribution
-- Data quality metrics
-- Processing time and validation results
-
-## Stage 3: Embedding Generation 🔄
-
-### Planned Features
-- Integration with embedding models (OpenAI, Sentence Transformers)
-- Batch embedding generation
-- Embedding storage and management
-- Similarity calculation utilities
-- Performance optimization
-
-## Stage 4: Matching Algorithm ⏳
-
-### Planned Features
-- Semantic similarity matching
-- Skill-based matching
-- Experience level filtering
-- Location-based filtering
-- Customizable matching criteria
-
-## Stage 5: Recommendation System ⏳
-
-### Planned Features
-- Personalized job recommendations
-- Ranking algorithms
-- User preference learning
-- Feedback integration
-- Recommendation explanations
-
-## Installation
-
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd JobFinder_Project
-```
-
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-3. Set up configuration:
-```bash
-# Copy and modify configuration files as needed
-cp src/config/settings.py.example src/config/settings.py
-```
-
-## Project Structure
-
-```
-JobFinder_Project/
-├── data/
-│   ├── raw/                 # Raw scraped data
-│   └── processed/           # Preprocessed data
-├── src/
-│   ├── config/             # Configuration management
-│   ├── scrapers/           # Data acquisition modules
-│   ├── preprocessing/      # Data preprocessing modules
-│   └── utils/              # Utility functions
-├── tests/                  # Test files
-├── requirements.txt        # Python dependencies
-├── README.md              # Project documentation
-├── demo_scraper.py        # Data acquisition demo
-├── preprocess_data.py     # Preprocessing demo
-└── test_scraper.py        # System testing
-```
-
-## Configuration
-
-The system uses a centralized configuration system in `src/config/settings.py`:
-
-- **Scraping settings**: URLs, headers, rate limits
-- **Preprocessing settings**: Text cleaning options, skill extraction
-- **Output settings**: File formats, storage locations
-- **Logging settings**: Log levels and output formats
-
-## Usage Examples
-
-### Data Acquisition
-```python
-from src.scrapers.job_scraper import JobScraper
-
-scraper = JobScraper()
-jobs = scraper.scrape_jobs(
-    location="St. Louis, MO",
-    keywords="computer science",
-    max_jobs=100
-)
-```
-
-### Data Preprocessing
-```python
-from src.preprocessing.embedding_preparer import EmbeddingPreparer
-
-preparer = EmbeddingPreparer()
-embedding_batch = preparer.create_embedding_batch(jobs_data, resume_text)
-```
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests
-5. Submit a pull request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- Built with Python 3.13
-- Uses BeautifulSoup for HTML parsing
-- Selenium for dynamic content scraping
-- Comprehensive error handling and logging
-- Ethical scraping practices
+## Overview
+This project is an end-to-end AI-powered job matching system that scrapes job postings, preprocesses and cleans the data, generates embeddings for both jobs and resumes, and matches candidates to jobs using state-of-the-art similarity techniques.
 
 ---
 
-**Current Status**: Stage 2 (Data Preprocessing) completed successfully. The system now includes comprehensive text cleaning, data normalization, skill extraction, resume parsing, and embedding preparation capabilities. Ready to proceed to Stage 3: Embedding Generation.
+## Stages & Features
+
+### 1. Data Acquisition
+- **Sources:** Indeed, LinkedIn (ethical scraping, configurable by location/keywords)
+- **Output:** Raw job data in JSON/CSV
+- **Challenges:** Rate limits, anti-bot measures, data consistency, ethical/legal compliance
+
+### 2. Preprocessing
+- **Text Cleaning:** HTML removal, normalization, lemmatization, stop word removal
+- **Skill Extraction:** From job descriptions and resumes
+- **Data Validation:** Handling missing data, salary normalization, experience categorization
+- **Resume Parsing:** Section extraction, contact info, skills, experience, education, projects
+- **Output:** Cleaned, normalized, embedding-ready data
+
+### 3. Embedding Generation
+- **Models:**
+  - OpenAI `text-embedding-3-small` (default, can be swapped for `text-embedding-3-large` or Gemini)
+- **API Usage:** Batching, rate limiting, cost tracking, error handling
+- **Output:** Embeddings for all jobs and the resume, stored with metadata
+
+### 4. Similarity Calculation & Top Job Selection
+- **Metric:** Cosine similarity (numpy, scipy)
+- **Ranking:** All jobs ranked by similarity to the resume
+- **Output:** Top 10 jobs with job title, company, location, and similarity score
+
+### 5. Reporting & Analysis
+- **Comprehensive Report:**
+  - Data acquisition method and challenges
+  - Preprocessing steps
+  - Embedding model(s) used and rationale
+  - Similarity calculation method
+  - Top 10 job matches with scores
+  - Analysis of results, strengths/weaknesses, and future work
+- **Repository:**
+  - All code, sample data (anonymized), and instructions included
+
+---
+
+## How to Run
+1. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. **Set your OpenAI API key:**
+   ```bash
+   export OPENAI_API_KEY='your-key-here'
+   ```
+3. **Run the embedding and matching pipeline:**
+   ```bash
+   python generate_embeddings.py
+   ```
+4. **Review the output:**
+   - Embeddings and reports in `data/embeddings/` and as `embedding_report_*.json`
+   - Top 10 job matches printed in the console
+   - Comprehensive report in `STAGE5_REPORT.md`
+
+---
+
+## Strengths & Weaknesses
+**Strengths:**
+- Modular, extensible, and well-documented code
+- Supports multiple embedding models (OpenAI, Gemini)
+- Handles real-world data issues (missing data, noise, etc.)
+- Batch processing and cost tracking for API usage
+- Clear reporting and statistics
+
+**Weaknesses:**
+- Dependent on the quality of scraped data
+- Embedding models may not capture all nuances of job fit
+- Resume parsing is heuristic and may miss some information
+- API costs for large-scale use
+
+## Future Work
+- Incorporate more advanced matching (e.g., neural ranking, LLMs)
+- Improve resume parsing with NLP models
+- Add user feedback loop for iterative improvement
+- Support more job boards and resume formats
+- Add web UI for interactive job search
+
+---
+
+## License
+MIT
