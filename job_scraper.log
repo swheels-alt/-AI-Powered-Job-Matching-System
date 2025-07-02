@@ -1,0 +1,39 @@
+2025-07-01 22:34:57,060 - src.utils.error_handler - WARNING - Could not fetch robots.txt from https://www.indeed.com/robots.txt
+2025-07-01 22:34:57,060 - src.scrapers.indeed_scraper - INFO - Searching Indeed page 1: https://www.indeed.com/jobs?q=python%20developer&l=St.%20Louis%2C%20MO&start=0
+2025-07-01 22:34:57,197 - src.utils.error_handler - ERROR - Request error: 403 Client Error: Forbidden for url: https://www.indeed.com/jobs?q=python%20developer&l=St.%20Louis%2C%20MO&start=0
+2025-07-01 22:34:57,197 - src.utils.error_handler - ERROR - Error in Indeed search: ScrapingError: Request failed: 403 Client Error: Forbidden for url: https://www.indeed.com/jobs?q=python%20developer&l=St.%20Louis%2C%20MO&start=0
+2025-07-01 22:34:57,489 - src.utils.error_handler - WARNING - Scraping disallowed by robots.txt: /
+2025-07-01 22:34:57,490 - src.scrapers.linkedin_scraper - WARNING - LinkedIn robots.txt may disallow scraping
+2025-07-01 22:34:57,490 - WDM - INFO - ====== WebDriver manager ======
+2025-07-01 22:34:57,918 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-01 22:34:58,075 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-01 22:34:58,203 - WDM - INFO - There is no [mac64] chromedriver "137.0.7151.119" for browser google-chrome "137.0.7151" in cache
+2025-07-01 22:34:58,209 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-01 22:34:58,629 - WDM - INFO - WebDriver version 137.0.7151.119 selected
+2025-07-01 22:34:58,631 - WDM - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.119/mac-arm64/chromedriver-mac-arm64.zip
+2025-07-01 22:34:58,631 - WDM - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.119/mac-arm64/chromedriver-mac-arm64.zip
+2025-07-01 22:34:58,853 - WDM - INFO - Driver downloading response is 200
+2025-07-01 22:35:01,122 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-01 22:35:01,306 - WDM - INFO - Driver has been saved in cache [/Users/samwheeler/.wdm/drivers/chromedriver/mac64/137.0.7151.119]
+2025-07-01 22:35:02,298 - src.scrapers.linkedin_scraper - INFO - Chrome WebDriver setup completed
+2025-07-01 22:35:02,298 - src.scrapers.linkedin_scraper - INFO - Searching LinkedIn: https://www.linkedin.com/jobs/search?keywords=python%20developer&location=St.%20Louis%2C%20MO&f_TPR=r86400&position=1&pageNum=0
+2025-07-01 22:35:15,759 - src.utils.error_handler - ERROR - Error in LinkedIn search: TimeoutException: Message: 
+Stacktrace:
+0   chromedriver                        0x0000000102735d14 cxxbridge1$str$ptr + 2735276
+1   chromedriver                        0x000000010272df88 cxxbridge1$str$ptr + 2703136
+2   chromedriver                        0x000000010227e6f0 cxxbridge1$string$len + 90424
+3   chromedriver                        0x00000001022c59e0 cxxbridge1$string$len + 381992
+4   chromedriver                        0x00000001023070c8 cxxbridge1$string$len + 650000
+5   chromedriver                        0x00000001022b9be8 cxxbridge1$string$len + 333360
+6   chromedriver                        0x00000001026f9598 cxxbridge1$str$ptr + 2487600
+7   chromedriver                        0x00000001026fc830 cxxbridge1$str$ptr + 2500552
+8   chromedriver                        0x00000001026d9c14 cxxbridge1$str$ptr + 2358188
+9   chromedriver                        0x00000001026fd0b8 cxxbridge1$str$ptr + 2502736
+10  chromedriver                        0x00000001026cadec cxxbridge1$str$ptr + 2297220
+11  chromedriver                        0x000000010271d420 cxxbridge1$str$ptr + 2634680
+12  chromedriver                        0x000000010271d5ac cxxbridge1$str$ptr + 2635076
+13  chromedriver                        0x000000010272dbd4 cxxbridge1$str$ptr + 2702188
+14  libsystem_pthread.dylib             0x0000000182232c0c _pthread_start + 136
+15  libsystem_pthread.dylib             0x000000018222db80 thread_start + 8
+
+2025-07-01 22:35:15,759 - src.utils.error_handler - ERROR - WebDriver details: 

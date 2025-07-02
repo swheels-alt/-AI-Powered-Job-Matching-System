@@ -1,0 +1,249 @@
+{
+  "jobs": [
+    {
+      "job_title": "Software Engineerineer",
+      "company_name": "TechCorp Inc.",
+      "location": "Saint Louis, MO",
+      "job_description": "we are looking for a talented software engineer to join our team. experience with python, javascript, and react is required. knowledge of aws and docker is a plus.",
+      "job_description_embedding": "we are looking for a talented software engineer to join our team. experience with python, javascript, and react is required. knowledge of aws and docker is a plus.",
+      "extracted_skills": [
+        "java",
+        "aws",
+        "react",
+        "javascript",
+        "docker",
+        "r",
+        "python"
+      ],
+      "required_skills": "Python, JavaScript, React, AWS, Docker",
+      "skills_list": [
+        "Python",
+        "JavaScript",
+        "React",
+        "AWS",
+        "Docker"
+      ],
+      "experience_level": "mid-level",
+      "salary_range": "80000 - 120000",
+      "posted_date": "2024-01-15",
+      "job_url": "https://example.com/job1",
+      "source_website": "Indeed",
+      "preprocessed_at": "2025-07-01T20:47:48.112952",
+      "preprocessing_config": {
+        "remove_stop_words": false,
+        "lemmatize": false,
+        "extract_skills": true
+      },
+      "embedding_text": "Software Engineerineer TechCorp Inc. we are looking for a talented software engineer to join our team. experience with python, javascript, and react is required. knowledge of aws and docker is a plus. java aws react javascript docker r python mid-level",
+      "embedding_prepared_at": "2025-07-01T20:47:48.113098"
+    },
+    {
+      "job_title": "Senior Python Developer",
+      "company_name": "DataSolutions LLC",
+      "location": "Saint Louis, MO",
+      "job_description": "senior python developer needed for our data science team. must have 5 years experience with python, sql, and machine learning frameworks. experience with tensorflow or pytorch preferred.",
+      "job_description_embedding": "senior python developer needed for our data science team. must have 5 years experience with python, sql, and machine learning frameworks. experience with tensorflow or pytorch preferred.",
+      "extracted_skills": [
+        "tensorflow",
+        "data science",
+        "sql",
+        "pytorch",
+        "machine learning",
+        "r",
+        "python"
+      ],
+      "required_skills": "Python, SQL, Machine Learning, TensorFlow, PyTorch",
+      "skills_list": [
+        "Python",
+        "SQL",
+        "Machine Learning",
+        "TensorFlow",
+        "PyTorch"
+      ],
+      "experience_level": "senior",
+      "salary_range": "120000 - 160000",
+      "posted_date": "2024-01-14",
+      "job_url": "https://example.com/job2",
+      "source_website": "LinkedIn",
+      "preprocessed_at": "2025-07-01T20:47:48.112998",
+      "preprocessing_config": {
+        "remove_stop_words": false,
+        "lemmatize": false,
+        "extract_skills": true
+      },
+      "embedding_text": "Senior Python Developer DataSolutions LLC senior python developer needed for our data science team. must have 5 years experience with python, sql, and machine learning frameworks. experience with tensorflow or pytorch preferred. tensorflow data science sql pytorch machine learning r python senior",
+      "embedding_prepared_at": "2025-07-01T20:47:48.113101"
+    },
+    {
+      "job_title": "Frontend Developer",
+      "company_name": "WebTech Solutions",
+      "location": "Saint Louis, MO",
+      "job_description": "frontend developer position available. must be proficient in html, css, javascript, and react. experience with node.js and modern build tools required.",
+      "job_description_embedding": "frontend developer position available. must be proficient in html, css, javascript, and react. experience with node.js and modern build tools required.",
+      "extracted_skills": [
+        "java",
+        "ml",
+        "html",
+        "react",
+        "javascript",
+        "css",
+        "r",
+        "ai",
+        "js",
+        "node.js"
+      ],
+      "required_skills": "HTML, CSS, JavaScript, React, Node.js",
+      "skills_list": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Node.js"
+      ],
+      "experience_level": "junior",
+      "salary_range": "60000 - 80000",
+      "posted_date": "2024-01-13",
+      "job_url": "https://example.com/job3",
+      "source_website": "Indeed",
+      "preprocessed_at": "2025-07-01T20:47:48.113025",
+      "preprocessing_config": {
+        "remove_stop_words": false,
+        "lemmatize": false,
+        "extract_skills": true
+      },
+      "embedding_text": "Frontend Developer WebTech Solutions frontend developer position available. must be proficient in html, css, javascript, and react. experience with node.js and modern build tools required. java ml html react javascript css r ai js node.js junior",
+      "embedding_prepared_at": "2025-07-01T20:47:48.113103"
+    },
+    {
+      "job_title": "Devops Engineer",
+      "company_name": "CloudFirst Systems",
+      "location": "Saint Louis, MO",
+      "job_description": "devops engineer to manage our cloud infrastructure. experience with aws, docker, kubernetes, and ci/cd pipelines required. knowledge of terraform and ansible is a plus.",
+      "job_description_embedding": "devops engineer to manage our cloud infrastructure. experience with aws, docker, kubernetes, and ci/cd pipelines required. knowledge of terraform and ansible is a plus.",
+      "extracted_skills": [
+        "aws",
+        "ci/cd",
+        "docker",
+        "r",
+        "devops",
+        "kubernetes"
+      ],
+      "required_skills": "AWS, Docker, Kubernetes, CI/CD, Terraform, Ansible",
+      "skills_list": [
+        "AWS",
+        "Docker",
+        "Kubernetes",
+        "CI/CD",
+        "Terraform",
+        "Ansible"
+      ],
+      "experience_level": "senior",
+      "salary_range": "100000 - 140000",
+      "posted_date": "2024-01-12",
+      "job_url": "https://example.com/job4",
+      "source_website": "LinkedIn",
+      "preprocessed_at": "2025-07-01T20:47:48.113055",
+      "preprocessing_config": {
+        "remove_stop_words": false,
+        "lemmatize": false,
+        "extract_skills": true
+      },
+      "embedding_text": "Devops Engineer CloudFirst Systems devops engineer to manage our cloud infrastructure. experience with aws, docker, kubernetes, and ci/cd pipelines required. knowledge of terraform and ansible is a plus. aws ci/cd docker r devops kubernetes senior",
+      "embedding_prepared_at": "2025-07-01T20:47:48.113104"
+    },
+    {
+      "job_title": "Data Scientistentist",
+      "company_name": "Analytics Pro",
+      "location": "Saint Louis, MO",
+      "job_description": "data scientist position focusing on machine learning and statistical analysis. must have experience with python, r, sql, and data visualization tools. phd in computer science or related field preferred.",
+      "job_description_embedding": "data scientist position focusing on machine learning and statistical analysis. must have experience with python, r, sql, and data visualization tools. phd in computer science or related field preferred.",
+      "extracted_skills": [
+        "sql",
+        "machine learning",
+        "r",
+        "python"
+      ],
+      "required_skills": "Python, R, SQL, Machine Learning, Data Visualization",
+      "skills_list": [
+        "Python",
+        "R",
+        "SQL",
+        "Machine Learning",
+        "Data Visualization"
+      ],
+      "experience_level": "senior",
+      "salary_range": "130000 - 170000",
+      "posted_date": "2024-01-11",
+      "job_url": "https://example.com/job5",
+      "source_website": "Indeed",
+      "preprocessed_at": "2025-07-01T20:47:48.113087",
+      "preprocessing_config": {
+        "remove_stop_words": false,
+        "lemmatize": false,
+        "extract_skills": true
+      },
+      "embedding_text": "Data Scientistentist Analytics Pro data scientist position focusing on machine learning and statistical analysis. must have experience with python, r, sql, and data visualization tools. phd in computer science or related field preferred. sql machine learning r python senior",
+      "embedding_prepared_at": "2025-07-01T20:47:48.113105"
+    }
+  ],
+  "resume": {
+    "raw_text": "\nJOHN DOE\nSoftware Engineer\njohn.doe@email.com | (555) 123-4567 | linkedin.com/in/johndoe | github.com/johndoe\n\nSUMMARY\nExperienced software engineer with 5+ years of experience in full-stack development. \nProficient in Python, JavaScript, React, and Node.js. Passionate about creating \nscalable web applications and solving complex technical challenges.\n\nEXPERIENCE\nSenior Software Engineer\nTechCorp Inc. | 2022 - Present\n- Developed and maintained RESTful APIs using Python and Django\n- Led a team of 3 developers in building a customer portal\n- Implemented CI/CD pipelines using Jenkins and Docker\n- Reduced application load time by 40% through optimization\n\nSoftware Developer\nStartupXYZ | 2020 - 2022\n- Built responsive web applications using React and Node.js\n- Collaborated with UX designers to implement user-friendly interfaces\n- Integrated third-party APIs for payment processing\n- Participated in agile development processes\n\nEDUCATION\nBachelor of Science in Computer Science\nUniversity of Technology | 2016 - 2020\n- GPA: 3.8/4.0\n- Relevant coursework: Data Structures, Algorithms, Database Systems\n\nSKILLS\nProgramming Languages: Python, JavaScript, TypeScript, Java, SQL\nFrameworks & Libraries: React, Node.js, Django, Express, Bootstrap\nTools & Technologies: Git, Docker, AWS, Jenkins, MongoDB, PostgreSQL\nMethodologies: Agile, Scrum, Test-Driven Development, CI/CD\n\nPROJECTS\nE-Commerce Platform\n- Built a full-stack e-commerce application using React and Node.js\n- Implemented user authentication, payment processing, and inventory management\n- Deployed on AWS with Docker containerization\n\nTask Management App\n- Developed a collaborative task management tool using Python and Django\n- Features include real-time updates, file sharing, and team collaboration\n- Integrated with Slack for notifications\n\nCERTIFICATIONS\nAWS Certified Developer Associate\nGoogle Cloud Platform Certified\n    ",
+    "parsed_resume": {
+      "raw_text": "\nJOHN DOE\nSoftware Engineer\njohn.doe@email.com | (555) 123-4567 | linkedin.com/in/johndoe | github.com/johndoe\n\nSUMMARY\nExperienced software engineer with 5+ years of experience in full-stack development. \nProficient in Python, JavaScript, React, and Node.js. Passionate about creating \nscalable web applications and solving complex technical challenges.\n\nEXPERIENCE\nSenior Software Engineer\nTechCorp Inc. | 2022 - Present\n- Developed and maintained RESTful APIs using Python and Django\n- Led a team of 3 developers in building a customer portal\n- Implemented CI/CD pipelines using Jenkins and Docker\n- Reduced application load time by 40% through optimization\n\nSoftware Developer\nStartupXYZ | 2020 - 2022\n- Built responsive web applications using React and Node.js\n- Collaborated with UX designers to implement user-friendly interfaces\n- Integrated third-party APIs for payment processing\n- Participated in agile development processes\n\nEDUCATION\nBachelor of Science in Computer Science\nUniversity of Technology | 2016 - 2020\n- GPA: 3.8/4.0\n- Relevant coursework: Data Structures, Algorithms, Database Systems\n\nSKILLS\nProgramming Languages: Python, JavaScript, TypeScript, Java, SQL\nFrameworks & Libraries: React, Node.js, Django, Express, Bootstrap\nTools & Technologies: Git, Docker, AWS, Jenkins, MongoDB, PostgreSQL\nMethodologies: Agile, Scrum, Test-Driven Development, CI/CD\n\nPROJECTS\nE-Commerce Platform\n- Built a full-stack e-commerce application using React and Node.js\n- Implemented user authentication, payment processing, and inventory management\n- Deployed on AWS with Docker containerization\n\nTask Management App\n- Developed a collaborative task management tool using Python and Django\n- Features include real-time updates, file sharing, and team collaboration\n- Integrated with Slack for notifications\n\nCERTIFICATIONS\nAWS Certified Developer Associate\nGoogle Cloud Platform Certified\n    ",
+      "cleaned_text": "john doe software engineer john.doeemail.com (555) 123-4567 linkedin.com/in/johndoe github.com/johndoe summary experienced software engineer with 5 years of experience in full-stack development. proficient in python, javascript, react, and node.js. passionate about creating scalable web applications and solving complex technical challenges. experience senior software engineer techcorp inc. 2022 - present - developed and maintained restful apis using python and django - led a team of 3 developers in building a customer portal - implemented ci/cd pipelines using jenkins and docker - reduced application load time by 40 through optimization software developer startupxyz 2020 - 2022 - built responsive web applications using react and node.js - collaborated with ux designers to implement user-friendly interfaces - integrated third-party apis for payment processing - participated in agile development processes education bachelor of science in computer science university of technology 2016 - 2020 - gpa: 3.8/4.0 - relevant coursework: data structures, algorithms, database systems skills programming languages: python, javascript, typescript, java, sql frameworks libraries: react, node.js, django, express, bootstrap tools technologies: git, docker, aws, jenkins, mongodb, postgresql methodologies: agile, scrum, test-driven development, ci/cd projects e-commerce platform - built a full-stack e-commerce application using react and node.js - implemented user authentication, payment processing, and inventory management - deployed on aws with docker containerization task management app - developed a collaborative task management tool using python and django - features include real-time updates, file sharing, and team collaboration - integrated with slack for notifications certifications aws certified developer associate google cloud platform certified",
+      "parsed_at": "2025-07-01T20:47:48.113216",
+      "contact_info": {
+        "email": "john.doe@email.com",
+        "phone": "(555) 123-4567",
+        "linkedin": "linkedin.com/in/johndoe",
+        "github": "github.com/johndoe"
+      },
+      "extracted_skills": []
+    },
+    "embedding_text": "",
+    "embedding_prepared_at": "2025-07-01T20:47:48.113222",
+    "preprocessing_config": {
+      "remove_stop_words": false,
+      "lemmatize": false,
+      "include_sections": [
+        "summary",
+        "experience",
+        "skills",
+        "education",
+        "projects"
+      ]
+    }
+  },
+  "batch_created_at": "2025-07-01T20:47:48.113230",
+  "preprocessing_config": {
+    "jobs": {
+      "remove_stop_words": false,
+      "lemmatize": false,
+      "extract_skills": true,
+      "missing_data_strategy": "fill_na"
+    },
+    "resume": {
+      "remove_stop_words": false,
+      "lemmatize": false,
+      "include_sections": [
+        "summary",
+        "experience",
+        "skills",
+        "education",
+        "projects"
+      ]
+    }
+  },
+  "statistics": {
+    "total_jobs": 5,
+    "jobs_with_skills": 5,
+    "average_job_description_length": 174.0,
+    "resume_included": true,
+    "resume_statistics": {
+      "total_sections": 0,
+      "total_skills": 0,
+      "has_contact_info": true,
+      "section_stats": {}
+    }
+  }
+}

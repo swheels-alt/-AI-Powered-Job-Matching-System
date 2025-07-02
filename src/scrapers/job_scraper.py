@@ -18,8 +18,8 @@ from config.settings import (
 )
 from utils.data_processor import JobDataProcessor
 from utils.error_handler import log_error
-from indeed_scraper import IndeedScraper
-from linkedin_scraper import LinkedInScraper
+from .indeed_scraper import IndeedScraper
+from .linkedin_scraper import LinkedInScraper
 
 # Setup logging
 logging.basicConfig(

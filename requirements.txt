@@ -20,6 +20,9 @@ jsonschema>=4.19.0
 # Logging and configuration
 python-dotenv>=1.0.0
 
+# OpenAI API for embeddings
+openai>=1.0.0
+
 # Development and testing
 pytest>=7.4.0
 pytest-cov>=4.1.0

@@ -1,0 +1,62 @@
+[
+  {
+    "job_title": "Software Engineer",
+    "company_name": "TechCorp Inc.",
+    "location": "St. Louis, MO",
+    "job_description": "We are looking for a talented Software Engineer to join our team. Experience with Python, JavaScript, and React is required. Knowledge of AWS and Docker is a plus.",
+    "required_skills": "Python, JavaScript, React, AWS, Docker",
+    "experience_level": "Mid-level",
+    "salary_range": "$80,000 - $120,000",
+    "posted_date": "2024-01-15",
+    "job_url": "https://example.com/job1",
+    "source_website": "Indeed"
+  },
+  {
+    "job_title": "Senior Python Developer",
+    "company_name": "DataSolutions LLC",
+    "location": "St. Louis, MO",
+    "job_description": "Senior Python Developer needed for our data science team. Must have 5+ years experience with Python, SQL, and machine learning frameworks. Experience with TensorFlow or PyTorch preferred.",
+    "required_skills": "Python, SQL, Machine Learning, TensorFlow, PyTorch",
+    "experience_level": "Senior",
+    "salary_range": "$120,000 - $160,000",
+    "posted_date": "2024-01-14",
+    "job_url": "https://example.com/job2",
+    "source_website": "LinkedIn"
+  },
+  {
+    "job_title": "Frontend Developer",
+    "company_name": "WebTech Solutions",
+    "location": "St. Louis, MO",
+    "job_description": "Frontend Developer position available. Must be proficient in HTML, CSS, JavaScript, and React. Experience with Node.js and modern build tools required.",
+    "required_skills": "HTML, CSS, JavaScript, React, Node.js",
+    "experience_level": "Junior",
+    "salary_range": "$60,000 - $80,000",
+    "posted_date": "2024-01-13",
+    "job_url": "https://example.com/job3",
+    "source_website": "Indeed"
+  },
+  {
+    "job_title": "DevOps Engineer",
+    "company_name": "CloudFirst Systems",
+    "location": "St. Louis, MO",
+    "job_description": "DevOps Engineer to manage our cloud infrastructure. Experience with AWS, Docker, Kubernetes, and CI/CD pipelines required. Knowledge of Terraform and Ansible is a plus.",
+    "required_skills": "AWS, Docker, Kubernetes, CI/CD, Terraform, Ansible",
+    "experience_level": "Senior",
+    "salary_range": "$100,000 - $140,000",
+    "posted_date": "2024-01-12",
+    "job_url": "https://example.com/job4",
+    "source_website": "LinkedIn"
+  },
+  {
+    "job_title": "Data Scientist",
+    "company_name": "Analytics Pro",
+    "location": "St. Louis, MO",
+    "job_description": "Data Scientist position focusing on machine learning and statistical analysis. Must have experience with Python, R, SQL, and data visualization tools. PhD in Computer Science or related field preferred.",
+    "required_skills": "Python, R, SQL, Machine Learning, Data Visualization",
+    "experience_level": "Senior",
+    "salary_range": "$130,000 - $170,000",
+    "posted_date": "2024-01-11",
+    "job_url": "https://example.com/job5",
+    "source_website": "Indeed"
+  }
+]

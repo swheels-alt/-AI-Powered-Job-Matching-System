@@ -86,5 +86,3 @@ This project is an end-to-end AI-powered job matching system that scrapes job po
 
 ---
 
-## License
-MIT

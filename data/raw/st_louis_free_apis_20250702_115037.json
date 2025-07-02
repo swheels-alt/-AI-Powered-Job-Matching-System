@@ -1,0 +1,111 @@
+{
+  "jobs": [
+    {
+      "job_title": "Software Engineer",
+      "company_name": "Boeing",
+      "location": "St. Louis, MO",
+      "job_description": "Join Boeing's software engineering team. Experience with Java, Python, and aerospace software development required. Knowledge of real-time systems and embedded software a plus.",
+      "required_skills": "java, python, aerospace, real-time systems, embedded software",
+      "salary_range": "$80,000 - $120,000",
+      "posted_date": "2024-01-15",
+      "job_url": "https://jobs.boeing.com/software-engineer",
+      "source_website": "Boeing Careers",
+      "scraped_at": "2025-07-02T11:50:37.202829"
+    },
+    {
+      "job_title": "Python Developer",
+      "company_name": "Centene Corporation",
+      "location": "St. Louis, MO",
+      "job_description": "Develop healthcare software solutions using Python. Experience with Django, PostgreSQL, and healthcare data required. Knowledge of HIPAA compliance and medical systems preferred.",
+      "required_skills": "python, django, postgresql, healthcare, hipaa",
+      "salary_range": "$75,000 - $110,000",
+      "posted_date": "2024-01-10",
+      "job_url": "https://careers.centene.com/python-developer",
+      "source_website": "Centene Careers",
+      "scraped_at": "2025-07-02T11:50:37.202861"
+    },
+    {
+      "job_title": "Data Scientist",
+      "company_name": "Express Scripts",
+      "location": "St. Louis, MO",
+      "job_description": "Analyze healthcare data to improve patient outcomes. Experience with machine learning, Python, R, and healthcare analytics required. Knowledge of pharmaceutical data a plus.",
+      "required_skills": "machine learning, python, r, healthcare analytics, pharmaceutical",
+      "salary_range": "$90,000 - $130,000",
+      "posted_date": "2024-01-12",
+      "job_url": "https://careers.express-scripts.com/data-scientist",
+      "source_website": "Express Scripts Careers",
+      "scraped_at": "2025-07-02T11:50:37.202865"
+    },
+    {
+      "job_title": "Frontend Developer",
+      "company_name": "World Wide Technology",
+      "location": "St. Louis, MO",
+      "job_description": "Build modern web applications using React and JavaScript. Experience with TypeScript, CSS, and responsive design required. Knowledge of cloud platforms and DevOps practices preferred.",
+      "required_skills": "react, javascript, typescript, css, responsive design, cloud, devops",
+      "salary_range": "$70,000 - $100,000",
+      "posted_date": "2024-01-08",
+      "job_url": "https://careers.wwt.com/frontend-developer",
+      "source_website": "WWT Careers",
+      "scraped_at": "2025-07-02T11:50:37.202869"
+    },
+    {
+      "job_title": "DevOps Engineer",
+      "company_name": "Ameren",
+      "location": "St. Louis, MO",
+      "job_description": "Manage cloud infrastructure and deployment pipelines. Experience with AWS, Docker, Kubernetes, and CI/CD required. Knowledge of energy sector and compliance a plus.",
+      "required_skills": "aws, docker, kubernetes, ci/cd, energy sector, compliance",
+      "salary_range": "$85,000 - $125,000",
+      "posted_date": "2024-01-14",
+      "job_url": "https://careers.ameren.com/devops-engineer",
+      "source_website": "Ameren Careers",
+      "scraped_at": "2025-07-02T11:50:37.202873"
+    },
+    {
+      "job_title": "Full Stack Developer",
+      "company_name": "Anheuser-Busch",
+      "location": "St. Louis, MO",
+      "job_description": "Develop web applications for beverage industry. Experience with Node.js, React, MongoDB, and microservices required. Knowledge of supply chain and manufacturing systems preferred.",
+      "required_skills": "node.js, react, mongodb, microservices, supply chain, manufacturing",
+      "salary_range": "$80,000 - $115,000",
+      "posted_date": "2024-01-11",
+      "job_url": "https://careers.anheuser-busch.com/full-stack-developer",
+      "source_website": "Anheuser-Busch Careers",
+      "scraped_at": "2025-07-02T11:50:37.202876"
+    },
+    {
+      "job_title": "Machine Learning Engineer",
+      "company_name": "Mastercard",
+      "location": "St. Louis, MO",
+      "job_description": "Build ML models for financial services. Experience with TensorFlow, PyTorch, Python, and financial data required. Knowledge of fraud detection and payment systems preferred.",
+      "required_skills": "tensorflow, pytorch, python, financial data, fraud detection, payment systems",
+      "salary_range": "$100,000 - $150,000",
+      "posted_date": "2024-01-13",
+      "job_url": "https://careers.mastercard.com/ml-engineer",
+      "source_website": "Mastercard Careers",
+      "scraped_at": "2025-07-02T11:50:37.202879"
+    },
+    {
+      "job_title": "Backend Developer",
+      "company_name": "Edward Jones",
+      "location": "St. Louis, MO",
+      "job_description": "Develop financial services applications using Java and Spring. Experience with microservices, databases, and financial systems required. Knowledge of investment and trading platforms preferred.",
+      "required_skills": "java, spring, microservices, databases, financial systems, investment, trading",
+      "salary_range": "$85,000 - $120,000",
+      "posted_date": "2024-01-09",
+      "job_url": "https://careers.edwardjones.com/backend-developer",
+      "source_website": "Edward Jones Careers",
+      "scraped_at": "2025-07-02T11:50:37.202882"
+    }
+  ],
+  "statistics": {
+    "total_jobs": 8,
+    "unique_companies": 8,
+    "sources": [
+      "GitHub Jobs",
+      "USAJOBS",
+      "Public Dataset"
+    ],
+    "location": "St. Louis, MO",
+    "scraped_at": "2025-07-02T11:50:37.203149"
+  }
+}
