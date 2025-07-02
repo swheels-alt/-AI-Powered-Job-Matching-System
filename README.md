@@ -1,88 +1,172 @@
 # AI-Powered Job Matching System
 
-## Overview
-This project is an end-to-end AI-powered job matching system that scrapes job postings, preprocesses and cleans the data, generates embeddings for both jobs and resumes, and matches candidates to jobs using state-of-the-art similarity techniques.
+## 🚀 Quick Start
+
+```bash
+# Clone and setup
+git clone https://github.com/swheels-alt/-AI-Powered-Job-Matching-System.git
+cd -AI-Powered-Job-Matching-System
+
+# Run setup (optional)
+./setup.sh
+
+# Use with your resume (RECOMMENDED)
+python run_with_my_resume.py
+```
+
+## 🎯 Main Features
+
+### **Personalized Job Matching**
+- **Input your resume** and get top 10 job matches
+- **Real St. Louis tech jobs** from major companies
+- **AI-powered matching** using similarity algorithms
+- **Detailed reports** with match scores and application links
+
+### **Companies Included**
+- Boeing, Centene, Express Scripts, World Wide Technology
+- Ameren, Anheuser-Busch, Mastercard, Edward Jones
+- And more St. Louis tech companies
+
+## 📋 How to Use
+
+### **1. Use Your Resume (Best Option)**
+```bash
+python run_with_my_resume.py
+```
+- Paste your resume when prompted
+- Type 'END' when finished
+- Get personalized top 10 matches
+
+### **2. Standard Pipeline**
+```bash
+python run_st_louis_pipeline.py
+```
+- Uses sample resume
+- Good for testing the system
+
+### **3. Generate Job Data**
+```bash
+python free_job_api_test.py
+```
+- Creates fresh St. Louis job data
+- Run first if you get "no job files found"
+
+## 📊 Example Output
+
+```
+🏆 TOP 10 JOB MATCHES FOR YOUR RESUME
+============================================================
+
+1. Software Engineer at Boeing
+   Location: Saint Louis, MO
+   Salary: $80,000 - $120,000
+   Skills: java, python, aerospace, real-time systems, embedded software
+   Match Score: 0.9876
+   Apply: https://jobs.boeing.com/software-engineer
+
+2. Python Developer at Centene Corporation
+   Location: Saint Louis, MO
+   Salary: $75,000 - $110,000
+   Skills: python, django, postgresql, healthcare, hipaa
+   Match Score: 0.9543
+   Apply: https://careers.centene.com/python-developer
+```
+
+## 🔧 System Architecture
+
+### **Stages**
+1. **Data Acquisition** - Collect job postings from St. Louis
+2. **Preprocessing** - Clean and normalize job data and resume
+3. **Embedding Generation** - Create AI embeddings for matching
+4. **Similarity Calculation** - Rank jobs by match score
+5. **Reporting** - Generate top 10 matches with details
+
+### **Technologies**
+- **Python 3.8+** - Core language
+- **OpenAI Embeddings** - AI-powered matching (optional)
+- **Cosine Similarity** - Job-resume matching algorithm
+- **JSON/CSV** - Data storage and reporting
+
+## 📁 Project Structure
+
+```
+JobFinder_Project/
+├── data/
+│   ├── raw/                    # Job data files
+│   └── processed/              # Reports and results
+├── src/
+│   ├── scrapers/               # Job scraping modules
+│   ├── preprocessing/          # Data cleaning and preparation
+│   ├── embeddings/             # AI embedding generation
+│   └── utils/                  # Utility functions
+├── run_with_my_resume.py       # 🎯 MAIN SCRIPT
+├── run_st_louis_pipeline.py    # Standard pipeline
+├── free_job_api_test.py        # Generate job data
+├── setup.sh                    # Setup script
+├── TERMINAL_GUIDE.md           # Detailed usage guide
+└── requirements.txt            # Dependencies
+```
+
+## 🎯 Complete Workflow
+
+```bash
+# 1. Setup (first time only)
+git clone https://github.com/swheels-alt/-AI-Powered-Job-Matching-System.git
+cd -AI-Powered-Job-Matching-System
+pip install -r requirements.txt
+
+# 2. Generate job data (first time only)
+python free_job_api_test.py
+
+# 3. Run with your resume
+python run_with_my_resume.py
+# [Paste your resume when prompted]
+# [Type 'END' when finished]
+```
+
+## 🔧 Customization
+
+### **Change Location**
+Edit `src/config/settings.py`:
+```python
+DEFAULT_LOCATION = "Your City, State"  # Change from "St. Louis, MO"
+```
+
+### **Add API Keys**
+For real embedding generation:
+```bash
+export OPENAI_API_KEY='your-openai-key-here'
+```
+
+### **Add Job Sources**
+- Edit `free_job_api_test.py` to add more job sources
+- Add your own job data to `data/raw/`
+
+## 🚨 Troubleshooting
+
+- **No job files**: Run `python free_job_api_test.py` first
+- **Import errors**: Run `pip install -r requirements.txt`
+- **Permission errors**: Run `chmod +x *.py`
+
+## 📈 Results
+
+- **Terminal**: Shows top 10 matches immediately
+- **Files**: Check `data/processed/` for detailed reports
+- **Match scores**: 1.0000 = perfect, 0.9000+ = excellent
+
+## 🚀 Next Steps
+
+1. **Try with your resume**: `python run_with_my_resume.py`
+2. **Customize for your city**: Edit `src/config/settings.py`
+3. **Add real API keys**: For production use
+4. **Extend functionality**: Add more job sources or features
 
 ---
 
-## Stages & Features
+**🎯 Ready to get started? Run:**
+```bash
+python run_with_my_resume.py
+```
 
-### 1. Data Acquisition
-- **Sources:** Indeed, LinkedIn (ethical scraping, configurable by location/keywords)
-- **Output:** Raw job data in JSON/CSV
-- **Challenges:** Rate limits, anti-bot measures, data consistency, ethical/legal compliance
-
-### 2. Preprocessing
-- **Text Cleaning:** HTML removal, normalization, lemmatization, stop word removal
-- **Skill Extraction:** From job descriptions and resumes
-- **Data Validation:** Handling missing data, salary normalization, experience categorization
-- **Resume Parsing:** Section extraction, contact info, skills, experience, education, projects
-- **Output:** Cleaned, normalized, embedding-ready data
-
-### 3. Embedding Generation
-- **Models:**
-  - OpenAI `text-embedding-3-small` (default, can be swapped for `text-embedding-3-large` or Gemini)
-- **API Usage:** Batching, rate limiting, cost tracking, error handling
-- **Output:** Embeddings for all jobs and the resume, stored with metadata
-
-### 4. Similarity Calculation & Top Job Selection
-- **Metric:** Cosine similarity (numpy, scipy)
-- **Ranking:** All jobs ranked by similarity to the resume
-- **Output:** Top 10 jobs with job title, company, location, and similarity score
-
-### 5. Reporting & Analysis
-- **Comprehensive Report:**
-  - Data acquisition method and challenges
-  - Preprocessing steps
-  - Embedding model(s) used and rationale
-  - Similarity calculation method
-  - Top 10 job matches with scores
-  - Analysis of results, strengths/weaknesses, and future work
-- **Repository:**
-  - All code, sample data (anonymized), and instructions included
-
----
-
-## How to Run
-1. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-2. **Set your OpenAI API key:**
-   ```bash
-   export OPENAI_API_KEY='your-key-here'
-   ```
-3. **Run the embedding and matching pipeline:**
-   ```bash
-   python generate_embeddings.py
-   ```
-4. **Review the output:**
-   - Embeddings and reports in `data/embeddings/` and as `embedding_report_*.json`
-   - Top 10 job matches printed in the console
-   - Comprehensive report in `STAGE5_REPORT.md`
-
----
-
-## Strengths & Weaknesses
-**Strengths:**
-- Modular, extensible, and well-documented code
-- Supports multiple embedding models (OpenAI, Gemini)
-- Handles real-world data issues (missing data, noise, etc.)
-- Batch processing and cost tracking for API usage
-- Clear reporting and statistics
-
-**Weaknesses:**
-- Dependent on the quality of scraped data
-- Embedding models may not capture all nuances of job fit
-- Resume parsing is heuristic and may miss some information
-- API costs for large-scale use
-
-## Future Work
-- Incorporate more advanced matching (e.g., neural ranking, LLMs)
-- Improve resume parsing with NLP models
-- Add user feedback loop for iterative improvement
-- Support more job boards and resume formats
-- Add web UI for interactive job search
-
----
+**📖 For detailed usage, see [TERMINAL_GUIDE.md](TERMINAL_GUIDE.md)**
 
