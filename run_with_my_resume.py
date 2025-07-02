@@ -101,9 +101,29 @@ Google Cloud Platform Certified
 
 def load_st_louis_jobs():
     """Load the St. Louis job data we collected."""
-    # Find the most recent St. Louis job file
-    raw_dir = "data/raw"
-    st_louis_files = [f for f in os.listdir(raw_dir) if f.startswith("st_louis_") and f.endswith(".json")]
+    # Try multiple possible data directory locations
+    possible_dirs = [
+        "data/raw",  # Current directory
+        "../data/raw",  # Parent directory
+        "../../data/raw",  # Grandparent directory
+        os.path.join(os.path.dirname(__file__), "data/raw"),  # Script directory
+    ]
+    
+    raw_dir = None
+    for dir_path in possible_dirs:
+        if os.path.exists(dir_path):
+            raw_dir = dir_path
+            break
+    
+    if not raw_dir:
+        print("❌ Could not find data/raw directory. Please run from the project root.")
+        return None
+    
+    try:
+        st_louis_files = [f for f in os.listdir(raw_dir) if f.startswith("st_louis_") and f.endswith(".json")]
+    except OSError:
+        print(f"❌ Error accessing directory: {raw_dir}")
+        return None
     
     if not st_louis_files:
         print("❌ No St. Louis job files found. Run free_job_api_test.py first.")
@@ -122,13 +142,17 @@ def load_st_louis_jobs():
         filepath = os.path.join(raw_dir, latest_file)
         print(f"📁 Loading St. Louis jobs from: {filepath}")
     
-    with open(filepath, 'r', encoding='utf-8') as f:
-        data = json.load(f)
-    
-    jobs = data['jobs']
-    print(f"📊 Loaded {len(jobs)} jobs from dataset")
-    
-    return jobs
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        jobs = data['jobs']
+        print(f"📊 Loaded {len(jobs)} jobs from dataset")
+        
+        return jobs
+    except Exception as e:
+        print(f"❌ Error loading file {filepath}: {e}")
+        return None
 
 def run_preprocessing(jobs, resume_text):
     """Run preprocessing on the job data and resume."""
