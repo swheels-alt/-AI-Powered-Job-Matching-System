@@ -22,16 +22,26 @@ def load_st_louis_jobs():
         print("❌ No St. Louis job files found. Run free_job_api_test.py first.")
         return None
     
-    # Get the most recent file
-    latest_file = max(st_louis_files, key=lambda x: os.path.getctime(os.path.join(raw_dir, x)))
-    filepath = os.path.join(raw_dir, latest_file)
-    
-    print(f"📁 Loading St. Louis jobs from: {filepath}")
+    # Prioritize enhanced datasets (they have more jobs)
+    enhanced_files = [f for f in st_louis_files if "enhanced" in f]
+    if enhanced_files:
+        # Get the most recent enhanced file
+        latest_file = max(enhanced_files, key=lambda x: os.path.getctime(os.path.join(raw_dir, x)))
+        filepath = os.path.join(raw_dir, latest_file)
+        print(f"📁 Loading enhanced St. Louis jobs from: {filepath}")
+    else:
+        # Fall back to regular files
+        latest_file = max(st_louis_files, key=lambda x: os.path.getctime(os.path.join(raw_dir, x)))
+        filepath = os.path.join(raw_dir, latest_file)
+        print(f"📁 Loading St. Louis jobs from: {filepath}")
     
     with open(filepath, 'r', encoding='utf-8') as f:
         data = json.load(f)
     
-    return data['jobs']
+    jobs = data['jobs']
+    print(f"📊 Loaded {len(jobs)} jobs from dataset")
+    
+    return jobs
 
 def create_sample_resume():
     """Create a sample resume for matching."""

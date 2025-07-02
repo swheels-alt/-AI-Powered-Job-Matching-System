@@ -1,0 +1,116 @@
+{
+  "metadata": {
+    "generated_at": "2025-07-02T14:43:37.632698",
+    "location": "St. Louis, MO",
+    "total_jobs": 18,
+    "unique_companies": 18,
+    "pipeline_stages": [
+      "Data Collection",
+      "Preprocessing",
+      "Embedding Generation",
+      "Job Matching"
+    ]
+  },
+  "top_matches": [
+    {
+      "rank": 1,
+      "job_title": "Software Engineerineerineer",
+      "company_name": "Boeing",
+      "location": "Saint Louis, MO",
+      "salary_range": "80000 - 120000",
+      "required_skills": "java, python, aerospace, real-time systems, embedded software",
+      "similarity_score": 1.0,
+      "job_url": "https://jobs.boeing.com/software-engineer"
+    },
+    {
+      "rank": 2,
+      "job_title": "Python Developer",
+      "company_name": "Centene Corporation",
+      "location": "Saint Louis, MO",
+      "salary_range": "75000 - 110000",
+      "required_skills": "python, django, postgresql, healthcare, hipaa",
+      "similarity_score": 0.9999,
+      "job_url": "https://careers.centene.com/python-developer"
+    },
+    {
+      "rank": 3,
+      "job_title": "Data Scientistentistentist",
+      "company_name": "Express Scripts",
+      "location": "Saint Louis, MO",
+      "salary_range": "90000 - 130000",
+      "required_skills": "machine learning, python, r, healthcare analytics, pharmaceutical",
+      "similarity_score": 0.9997,
+      "job_url": "https://careers.express-scripts.com/data-scientist"
+    },
+    {
+      "rank": 4,
+      "job_title": "Frontend Developer",
+      "company_name": "World Wide Technology",
+      "location": "Saint Louis, MO",
+      "salary_range": "70000 - 100000",
+      "required_skills": "react, javascript, typescript, css, responsive design, cloud, devops",
+      "similarity_score": 0.9994,
+      "job_url": "https://careers.wwt.com/frontend-developer"
+    },
+    {
+      "rank": 5,
+      "job_title": "Devops Engineer",
+      "company_name": "Ameren",
+      "location": "Saint Louis, MO",
+      "salary_range": "85000 - 125000",
+      "required_skills": "aws, docker, kubernetes, ci/cd, energy sector, compliance",
+      "similarity_score": 0.9989,
+      "job_url": "https://careers.ameren.com/devops-engineer"
+    },
+    {
+      "rank": 6,
+      "job_title": "Fullstack Developer",
+      "company_name": "Anheuser-Busch",
+      "location": "Saint Louis, MO",
+      "salary_range": "80000 - 115000",
+      "required_skills": "node.js, react, mongodb, microservices, supply chain, manufacturing",
+      "similarity_score": 0.9984,
+      "job_url": "https://careers.anheuser-busch.com/full-stack-developer"
+    },
+    {
+      "rank": 7,
+      "job_title": "Machine Learning Engineer",
+      "company_name": "Mastercard",
+      "location": "Saint Louis, MO",
+      "salary_range": "100000 - 150000",
+      "required_skills": "tensorflow, pytorch, python, financial data, fraud detection, payment systems",
+      "similarity_score": 0.9978,
+      "job_url": "https://careers.mastercard.com/ml-engineer"
+    },
+    {
+      "rank": 8,
+      "job_title": "Backend Developer",
+      "company_name": "Edward Jones",
+      "location": "Saint Louis, MO",
+      "salary_range": "85000 - 120000",
+      "required_skills": "java, spring, microservices, databases, financial systems, investment, trading",
+      "similarity_score": 0.9972,
+      "job_url": "https://careers.edwardjones.com/backend-developer"
+    },
+    {
+      "rank": 9,
+      "job_title": "Mobile App Developer",
+      "company_name": "Gateway Digital",
+      "location": "Saint Louis, MO",
+      "salary_range": "75000 - 110000",
+      "required_skills": "react native, swift, kotlin, mobile development, ui/ux, app store",
+      "similarity_score": 0.9965,
+      "job_url": "https://careers.gatewaydigital.com/mobile-developer"
+    },
+    {
+      "rank": 10,
+      "job_title": "Cybersecurity Analyst",
+      "company_name": "SecureTech Solutions",
+      "location": "Saint Louis, MO",
+      "salary_range": "85000 - 125000",
+      "required_skills": "cybersecurity, threat analysis, incident response, soc2, iso27001, security tools",
+      "similarity_score": 0.9957,
+      "job_url": "https://careers.securetech.com/cybersecurity-analyst"
+    }
+  ]
+}

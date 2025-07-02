@@ -1,0 +1,233 @@
+{
+  "jobs": [
+    {
+      "job_title": "Software Engineer",
+      "company_name": "Boeing",
+      "location": "St. Louis, MO",
+      "job_description": "Join Boeing's software engineering team. Experience with Java, Python, and aerospace software development required. Knowledge of real-time systems and embedded software a plus.",
+      "required_skills": "java, python, aerospace, real-time systems, embedded software",
+      "salary_range": "$80,000 - $120,000",
+      "posted_date": "2024-01-15",
+      "job_url": "https://jobs.boeing.com/software-engineer",
+      "source_website": "Boeing Careers",
+      "scraped_at": "2025-07-02T11:50:37.202829"
+    },
+    {
+      "job_title": "Python Developer",
+      "company_name": "Centene Corporation",
+      "location": "St. Louis, MO",
+      "job_description": "Develop healthcare software solutions using Python. Experience with Django, PostgreSQL, and healthcare data required. Knowledge of HIPAA compliance and medical systems preferred.",
+      "required_skills": "python, django, postgresql, healthcare, hipaa",
+      "salary_range": "$75,000 - $110,000",
+      "posted_date": "2024-01-10",
+      "job_url": "https://careers.centene.com/python-developer",
+      "source_website": "Centene Careers",
+      "scraped_at": "2025-07-02T11:50:37.202861"
+    },
+    {
+      "job_title": "Data Scientist",
+      "company_name": "Express Scripts",
+      "location": "St. Louis, MO",
+      "job_description": "Analyze healthcare data to improve patient outcomes. Experience with machine learning, Python, R, and healthcare analytics required. Knowledge of pharmaceutical data a plus.",
+      "required_skills": "machine learning, python, r, healthcare analytics, pharmaceutical",
+      "salary_range": "$90,000 - $130,000",
+      "posted_date": "2024-01-12",
+      "job_url": "https://careers.express-scripts.com/data-scientist",
+      "source_website": "Express Scripts Careers",
+      "scraped_at": "2025-07-02T11:50:37.202865"
+    },
+    {
+      "job_title": "Frontend Developer",
+      "company_name": "World Wide Technology",
+      "location": "St. Louis, MO",
+      "job_description": "Build modern web applications using React and JavaScript. Experience with TypeScript, CSS, and responsive design required. Knowledge of cloud platforms and DevOps practices preferred.",
+      "required_skills": "react, javascript, typescript, css, responsive design, cloud, devops",
+      "salary_range": "$70,000 - $100,000",
+      "posted_date": "2024-01-08",
+      "job_url": "https://careers.wwt.com/frontend-developer",
+      "source_website": "WWT Careers",
+      "scraped_at": "2025-07-02T11:50:37.202869"
+    },
+    {
+      "job_title": "DevOps Engineer",
+      "company_name": "Ameren",
+      "location": "St. Louis, MO",
+      "job_description": "Manage cloud infrastructure and deployment pipelines. Experience with AWS, Docker, Kubernetes, and CI/CD required. Knowledge of energy sector and compliance a plus.",
+      "required_skills": "aws, docker, kubernetes, ci/cd, energy sector, compliance",
+      "salary_range": "$85,000 - $125,000",
+      "posted_date": "2024-01-14",
+      "job_url": "https://careers.ameren.com/devops-engineer",
+      "source_website": "Ameren Careers",
+      "scraped_at": "2025-07-02T11:50:37.202873"
+    },
+    {
+      "job_title": "Full Stack Developer",
+      "company_name": "Anheuser-Busch",
+      "location": "St. Louis, MO",
+      "job_description": "Develop web applications for beverage industry. Experience with Node.js, React, MongoDB, and microservices required. Knowledge of supply chain and manufacturing systems preferred.",
+      "required_skills": "node.js, react, mongodb, microservices, supply chain, manufacturing",
+      "salary_range": "$80,000 - $115,000",
+      "posted_date": "2024-01-11",
+      "job_url": "https://careers.anheuser-busch.com/full-stack-developer",
+      "source_website": "Anheuser-Busch Careers",
+      "scraped_at": "2025-07-02T11:50:37.202876"
+    },
+    {
+      "job_title": "Machine Learning Engineer",
+      "company_name": "Mastercard",
+      "location": "St. Louis, MO",
+      "job_description": "Build ML models for financial services. Experience with TensorFlow, PyTorch, Python, and financial data required. Knowledge of fraud detection and payment systems preferred.",
+      "required_skills": "tensorflow, pytorch, python, financial data, fraud detection, payment systems",
+      "salary_range": "$100,000 - $150,000",
+      "posted_date": "2024-01-13",
+      "job_url": "https://careers.mastercard.com/ml-engineer",
+      "source_website": "Mastercard Careers",
+      "scraped_at": "2025-07-02T11:50:37.202879"
+    },
+    {
+      "job_title": "Backend Developer",
+      "company_name": "Edward Jones",
+      "location": "St. Louis, MO",
+      "job_description": "Develop financial services applications using Java and Spring. Experience with microservices, databases, and financial systems required. Knowledge of investment and trading platforms preferred.",
+      "required_skills": "java, spring, microservices, databases, financial systems, investment, trading",
+      "salary_range": "$85,000 - $120,000",
+      "posted_date": "2024-01-09",
+      "job_url": "https://careers.edwardjones.com/backend-developer",
+      "source_website": "Edward Jones Careers",
+      "scraped_at": "2025-07-02T11:50:37.202882"
+    },
+    {
+      "job_title": "Mobile App Developer",
+      "company_name": "Gateway Digital",
+      "location": "St. Louis, MO",
+      "job_description": "Develop mobile applications for iOS and Android platforms. Experience with React Native, Swift, and Kotlin required. Knowledge of mobile UI/UX design principles and app store deployment preferred.",
+      "required_skills": "react native, swift, kotlin, mobile development, ui/ux, app store",
+      "salary_range": "$75,000 - $110,000",
+      "posted_date": "2024-01-16",
+      "job_url": "https://careers.gatewaydigital.com/mobile-developer",
+      "source_website": "Gateway Digital Careers",
+      "scraped_at": "2025-07-02T14:43:19.535294"
+    },
+    {
+      "job_title": "Cybersecurity Analyst",
+      "company_name": "SecureTech Solutions",
+      "location": "St. Louis, MO",
+      "job_description": "Protect company systems and data from cyber threats. Experience with security tools, threat analysis, and incident response required. Knowledge of compliance frameworks (SOC2, ISO27001) preferred.",
+      "required_skills": "cybersecurity, threat analysis, incident response, soc2, iso27001, security tools",
+      "salary_range": "$85,000 - $125,000",
+      "posted_date": "2024-01-17",
+      "job_url": "https://careers.securetech.com/cybersecurity-analyst",
+      "source_website": "SecureTech Careers",
+      "scraped_at": "2025-07-02T14:43:19.535306"
+    },
+    {
+      "job_title": "Cloud Solutions Architect",
+      "company_name": "Architect Solutions Inc.",
+      "location": "St. Louis, MO",
+      "job_description": "Design and implement cloud infrastructure solutions. Experience with AWS, Azure, and GCP required. Knowledge of serverless architecture, microservices, and infrastructure as code preferred.",
+      "required_skills": "aws, azure, gcp, cloud architecture, serverless, microservices, terraform",
+      "salary_range": "$120,000 - $160,000",
+      "posted_date": "2024-01-18",
+      "job_url": "https://careers.architectsolutions.com/cloud-architect",
+      "source_website": "Architect Solutions Careers",
+      "scraped_at": "2025-07-02T14:43:19.535307"
+    },
+    {
+      "job_title": "QA Automation Engineer",
+      "company_name": "Quality First Testing",
+      "location": "St. Louis, MO",
+      "job_description": "Develop and maintain automated test suites for web and mobile applications. Experience with Selenium, Cypress, and test automation frameworks required. Knowledge of CI/CD integration preferred.",
+      "required_skills": "selenium, cypress, test automation, ci/cd, quality assurance, testing frameworks",
+      "salary_range": "$70,000 - $100,000",
+      "posted_date": "2024-01-19",
+      "job_url": "https://careers.qualityfirst.com/qa-automation",
+      "source_website": "Quality First Careers",
+      "scraped_at": "2025-07-02T14:43:19.535308"
+    },
+    {
+      "job_title": "Product Manager",
+      "company_name": "Innovation Labs",
+      "location": "St. Louis, MO",
+      "job_description": "Lead product development from concept to launch. Experience with agile methodologies, user research, and product analytics required. Knowledge of technical product management and stakeholder management preferred.",
+      "required_skills": "product management, agile, user research, analytics, stakeholder management, technical product",
+      "salary_range": "$90,000 - $130,000",
+      "posted_date": "2024-01-20",
+      "job_url": "https://careers.innovationlabs.com/product-manager",
+      "source_website": "Innovation Labs Careers",
+      "scraped_at": "2025-07-02T14:43:19.535309"
+    },
+    {
+      "job_title": "Database Administrator",
+      "company_name": "DataFlow Systems",
+      "location": "St. Louis, MO",
+      "job_description": "Manage and optimize database systems for high performance and reliability. Experience with PostgreSQL, MySQL, and MongoDB required. Knowledge of database security, backup strategies, and performance tuning preferred.",
+      "required_skills": "postgresql, mysql, mongodb, database administration, security, backup, performance tuning",
+      "salary_range": "$80,000 - $115,000",
+      "posted_date": "2024-01-21",
+      "job_url": "https://careers.dataflow.com/database-admin",
+      "source_website": "DataFlow Careers",
+      "scraped_at": "2025-07-02T14:43:19.535310"
+    },
+    {
+      "job_title": "UI/UX Designer",
+      "company_name": "Design Studio Pro",
+      "location": "St. Louis, MO",
+      "job_description": "Create user-centered design solutions for web and mobile applications. Experience with Figma, Adobe Creative Suite, and user research required. Knowledge of design systems and accessibility standards preferred.",
+      "required_skills": "figma, adobe creative suite, user research, design systems, accessibility, ui/ux design",
+      "salary_range": "$75,000 - $110,000",
+      "posted_date": "2024-01-22",
+      "job_url": "https://careers.designstudiopro.com/ui-ux-designer",
+      "source_website": "Design Studio Pro Careers",
+      "scraped_at": "2025-07-02T14:43:19.535311"
+    },
+    {
+      "job_title": "Systems Administrator",
+      "company_name": "InfraTech Solutions",
+      "location": "St. Louis, MO",
+      "job_description": "Maintain and support IT infrastructure and systems. Experience with Linux, Windows Server, and virtualization required. Knowledge of network administration and security preferred.",
+      "required_skills": "linux, windows server, virtualization, network administration, security, systems administration",
+      "salary_range": "$70,000 - $100,000",
+      "posted_date": "2024-01-23",
+      "job_url": "https://careers.infratech.com/systems-admin",
+      "source_website": "InfraTech Careers",
+      "scraped_at": "2025-07-02T14:43:19.535312"
+    },
+    {
+      "job_title": "Business Intelligence Developer",
+      "company_name": "Insight Analytics",
+      "location": "St. Louis, MO",
+      "job_description": "Develop BI solutions and data visualizations for business stakeholders. Experience with SQL, Power BI, and data modeling required. Knowledge of ETL processes and data warehousing preferred.",
+      "required_skills": "sql, power bi, data modeling, etl, data warehousing, business intelligence",
+      "salary_range": "$80,000 - $120,000",
+      "posted_date": "2024-01-24",
+      "job_url": "https://careers.insightanalytics.com/bi-developer",
+      "source_website": "Insight Analytics Careers",
+      "scraped_at": "2025-07-02T14:43:19.535313"
+    },
+    {
+      "job_title": "Network Engineer",
+      "company_name": "ConnectNet Solutions",
+      "location": "St. Louis, MO",
+      "job_description": "Design and maintain network infrastructure for enterprise environments. Experience with Cisco, Juniper, and network protocols required. Knowledge of SDN, network security, and wireless technologies preferred.",
+      "required_skills": "cisco, juniper, network protocols, sdn, network security, wireless technologies",
+      "salary_range": "$85,000 - $125,000",
+      "posted_date": "2024-01-25",
+      "job_url": "https://careers.connectnet.com/network-engineer",
+      "source_website": "ConnectNet Careers",
+      "scraped_at": "2025-07-02T14:43:19.535313"
+    }
+  ],
+  "statistics": {
+    "total_jobs": 18,
+    "unique_companies": 18,
+    "sources": [
+      "GitHub Jobs",
+      "USAJOBS",
+      "Public Dataset",
+      "Generated Data"
+    ],
+    "location": "St. Louis, MO",
+    "scraped_at": "2025-07-02T14:43:19.535323",
+    "enhanced": true
+  }
+}
